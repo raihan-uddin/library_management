@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: Nov 06, 2019 at 02:04 PM
+-- Generation Time: Nov 13, 2019 at 04:59 PM
 -- Server version: 5.7.24
 -- PHP Version: 7.2.19
 
@@ -34,6 +34,13 @@ CREATE TABLE `authors` (
   `email` varchar(255) DEFAULT NULL,
   `address` text
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `authors`
+--
+
+INSERT INTO `authors` (`id`, `author_name`, `email`, `address`) VALUES
+(1, 'ABC', 'abc@email.com', 'asldfjas\r\n');
 
 -- --------------------------------------------------------
 
@@ -66,6 +73,15 @@ CREATE TABLE `category` (
   `category_name` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
+--
+-- Dumping data for table `category`
+--
+
+INSERT INTO `category` (`id`, `category_name`) VALUES
+(1, 'Science Fiction'),
+(2, 'Nobel'),
+(3, 'Stories');
+
 -- --------------------------------------------------------
 
 --
@@ -77,6 +93,13 @@ CREATE TABLE `publications` (
   `publication_name` varchar(255) NOT NULL,
   `address` text
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `publications`
+--
+
+INSERT INTO `publications` (`id`, `publication_name`, `address`) VALUES
+(1, 'ABC', 'ABCDEF');
 
 -- --------------------------------------------------------
 
@@ -96,7 +119,9 @@ CREATE TABLE `user` (
 --
 
 INSERT INTO `user` (`id`, `username`, `email`, `password`) VALUES
-(1, 'superadmin', 'admin@admin.com', '17c4520f6cfd1ab53d8745e84681eb49');
+(1, 'superadmin', 'admin@admin.com', '900150983cd24fb0d6963f7d28e17f72'),
+(2, 'raihan', 'raihan@gmail.com', '900150983cd24fb0d6963f7d28e17f72'),
+(4, 'mohon', 'mohon@gmail.com', '202cb962ac59075b964b07152d234b70');
 
 --
 -- Indexes for dumped tables
@@ -143,7 +168,7 @@ ALTER TABLE `user`
 -- AUTO_INCREMENT for table `authors`
 --
 ALTER TABLE `authors`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT for table `book`
@@ -155,19 +180,19 @@ ALTER TABLE `book`
 -- AUTO_INCREMENT for table `category`
 --
 ALTER TABLE `category`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT for table `publications`
 --
 ALTER TABLE `publications`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT for table `user`
 --
 ALTER TABLE `user`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- Constraints for dumped tables
