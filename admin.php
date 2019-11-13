@@ -22,10 +22,10 @@ if (isset($_SESSION["logstatus"]) && $_SESSION["logstatus"] == 1) {
 
     <ul>
         <li><a class="active" href="#">Library Management</a></li>
-        <li><a href="#contact" target="body">Book</a></li>
-        <li><a href="#news" target="body">Category</a></li>
-        <li><a href="#about" target="body">Author</a></li>
-        <li><a href="#about" target="body">Publishers</a></li>
+        <li><a href="book/index.php" target="body">Book</a></li>
+        <li><a href="category/index.php" target="body">Category</a></li>
+        <li><a href="authors/index.php" target="body">Author</a></li>
+        <li><a href="publishers/index.php" target="body">Publishers</a></li>
         <li><a href="users/index.php" target="body">Users</a></li>
         <li><a href="?logout">Logout</a></li>
     </ul>

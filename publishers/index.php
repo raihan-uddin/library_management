@@ -4,7 +4,7 @@
 <nav aria-label="breadcrumb">
     <ol class="breadcrumb">
         <li class="breadcrumb-item"><a href="#">Home</a></li>
-        <li class="breadcrumb-item active">Users</li>
+        <li class="breadcrumb-item active" aria-current="page">Publication</li>
     </ol>
 </nav>
 <div>
@@ -18,8 +18,8 @@
     <thead>
     <tr>
         <th scope="col">#</th>
-        <th scope="col">User Name</th>
-        <th scope="col">Email</th>
+        <th scope="col">Publication Name</th>
+        <th scope="col">Address</th>
         <th scope="col">Action</th>
     </tr>
     </thead>
@@ -28,15 +28,15 @@
     include_once("../config.php"); //Establishing connection with our database
     if (isset($_GET['delete'])) {
         $delete = $_GET['delete'];
-        $sql = "DELETE FROM user WHERE id=$delete";
+        $sql = "DELETE FROM publications WHERE id=$delete";
         $result = mysqli_query($connection, $sql);
         header("location: index.php"); // Redirecting To Other Page
     }
     if (isset($_POST['submit'])) {
         $search = $_POST['search'];
-        $sql = "SELECT * FROM user WHERE username LIKE '%$search%' OR email LIKE '%$search%'";
+        $sql = "SELECT * FROM publications WHERE publication_name LIKE '%$search%' OR address LIKE '%$search%'";
     } else {
-        $sql = "SELECT * FROM user ";
+        $sql = "SELECT * FROM publications ";
     }
     $result = mysqli_query($connection, $sql);
     $i = 0;
@@ -44,8 +44,8 @@
         ?>
         <tr>
             <th scope="row"><?= ++$i; ?></th>
-            <td><?= $row['username']; ?></td>
-            <td><?= $row['email']; ?></td>
+            <td><?= $row['publication_name']; ?></td>
+            <td><?= $row['address']; ?></td>
             <td>
                 <div class="btn-group" role="group" aria-label="Basic example">
                     <a class="btn btn-primary text-white" href="_form2.php?edit=<?= $row['id'] ?>">Edit</a>

@@ -2,13 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4573ccd9-b801-4a2b-bd54-f0278be5f671" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/users/index.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/users/update_users.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/authors/_form.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/authors/_form2.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/authors/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book/_form.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book/_form2.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/publishers/_form.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/publishers/_form2.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/publishers/index.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/users.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/users/add_users.php" beforeDir="false" afterPath="$PROJECT_DIR$/users/_form.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/users/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/users/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/users/update_users.php" beforeDir="false" afterPath="$PROJECT_DIR$/users/_form2.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -36,17 +43,18 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/users" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\laragon\www\library_management\users" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\laragon\www\library_management\index" />
       <recent name="C:\laragon\www\library_management\users" />
       <recent name="C:\laragon\www\library_management" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\laragon\www\library_management" />
+      <recent name="C:\laragon\www\library_management\users" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -75,7 +83,7 @@
       <workItem from="1572883696345" duration="3869000" />
       <workItem from="1573053189094" duration="100000" />
       <workItem from="1573397207972" duration="2663000" />
-      <workItem from="1573652166322" duration="1786000" />
+      <workItem from="1573652166322" duration="9996000" />
     </task>
     <servers />
   </component>
