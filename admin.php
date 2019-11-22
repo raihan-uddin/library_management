@@ -30,7 +30,7 @@ if (isset($_SESSION["logstatus"]) && $_SESSION["logstatus"] == 1) {
         <li><a href="?logout">Logout</a></li>
     </ul>
 
-    <div style="margin-left:25%;padding:1px 16px;height:1000px;">
+    <div style="margin-left:15%;padding:1px 16px;height:1000px;">
         <div class="iframe-container">
             <iframe id="iframe" name="body">
 

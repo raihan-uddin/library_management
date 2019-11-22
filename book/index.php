@@ -4,7 +4,7 @@
 <nav aria-label="breadcrumb">
     <ol class="breadcrumb">
         <li class="breadcrumb-item"><a href="#">Home</a></li>
-        <li class="breadcrumb-item active" aria-current="page">Authors</li>
+        <li class="breadcrumb-item active" aria-current="page">Book</li>
     </ol>
 </nav>
 <div>
@@ -19,6 +19,15 @@
     <tr>
         <th scope="col">#</th>
         <th scope="col">Category Name</th>
+        <th scope="col">Title</th>
+        <th scope="col">Short Desc.</th>
+        <th scope="col">Edition</th>
+        <th scope="col">No Of Pages</th>
+        <th scope="col">Price</th>
+        <th scope="col">Qty</th>
+        <th scope="col">Publication Date</th>
+        <th scope="col">Author</th>
+        <th scope="col">Publication</th>
         <th scope="col">Action</th>
     </tr>
     </thead>
